@@ -1,0 +1,19 @@
+{
+  "extends": "ts-node/node12/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+  },
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+  },
+  "lib": [
+    "es2022",
+    "node"
+  ]
+}
