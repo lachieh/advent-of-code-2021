@@ -14,8 +14,15 @@ const newInput = join(__dirname, newFolder, 'input.txt')
 mkdirSync(join(__dirname, newFolder))
 writeFileSync(newFile, `// Advent of Code: ${name}
 const ${name} = (input: string) => {
-  // solve
+  const processed = processInput(input)
+  
 }
+
+const processInput = (input: string): ProcessedInput => {
+
+}
+
+type ProcessedInput = void
 
 export default ${name}
 `)
